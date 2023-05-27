@@ -22,7 +22,9 @@ const show = ({ hour, minute, second }) => {
     minute = `${minute}`.padStart(2, 0);
     hour = `${hour}`.padStart(2, 0);
 
-    clock.textContent = `${hour}:${minute}:${second}`
+    hour = hour > 12 ? hour - 12 : hour;
+    let indicator = hour >= 12 ? "PM" : "AM";
+    clock.textContent = `${hour}:${minute}:${second} ${indicator}`
 }
 
 setInterval(() => show(getCurrentTime()), 1000);
