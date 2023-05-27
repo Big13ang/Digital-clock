@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Digital-7', Arial, sans-serif;
-  background: #01082b;
+  background-image: linear-gradient(to right top, #01082b, #031233, #06183b, #0b1e43, #10244c, #112752, #122a57, #132d5d, #112d61, #0f2e66, #0d2e6a, #0b2e6e);
 }
 
 .clock {
@@ -30,4 +30,8 @@ body {
   border: 5px solid #17D4FE;
   border-radius: 200px;
   padding: 30px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(0, 255, 255, 0.7);
 }
