@@ -36,3 +36,16 @@ body {
     2px 4px 8px 0px rgba(0, 255, 255, 0.7),
     2px 4px 16px 0px rgba(0, 255, 255, 0.7);
 }
+
+
+@media only screen and (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
+
+  .clock {
+    width: 300px;
+    font-size: 40px;
+    padding: 20px;
+  }
+}
