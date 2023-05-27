@@ -16,3 +16,13 @@ const getCurrentTime = () => {
     }
 }
 
+const show = ({ hour, minute, second }) => {
+    // fix 00:00:00
+    second = `${second}`.padStart(2, 0);
+    minute = `${minute}`.padStart(2, 0);
+    hour = `${hour}`.padStart(2, 0);
+
+    clock.textContent = `${hour}:${minute}:${second}`
+}
+
+setInterval(() => show(getCurrentTime()), 1000);
