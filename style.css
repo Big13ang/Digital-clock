@@ -1,0 +1,21 @@
+* {
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #17D4FE;
+  font-size: 60px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+}
