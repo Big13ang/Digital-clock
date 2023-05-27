@@ -1,6 +1,9 @@
 'use strict';
 
 const clock = document.querySelector('.clock');
+const body = document.querySelector('body');
+
+body.style.height = `${window.innerHeight}px`;
 
 const getCurrentTime = () => {
     let now = new Date();
