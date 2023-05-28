@@ -22,8 +22,8 @@ const show = ({ hour, minute, second }) => {
     minute = `${minute}`.padStart(2, 0);
     hour = `${hour}`.padStart(2, 0);
 
-    hour = hour > 12 ? hour - 12 : hour;
     let indicator = hour >= 12 ? "PM" : "AM";
+    hour = hour > 12 ? hour - 12 : hour;
     clock.textContent = `${hour}:${minute}:${second} ${indicator}`
 }
 
