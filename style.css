@@ -43,6 +43,10 @@ body {
 
 
 @media only screen and (max-width: 767px) {
+  body {
+    background-image: linear-gradient(to left bottom, #01082b, #031233, #06183b, #0b1e43, #10244c, #112752);
+  }
+
   .clock {
     width: 300px;
     font-size: 40px;
